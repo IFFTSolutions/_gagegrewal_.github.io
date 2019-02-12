@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Regional Sales Q1</title>
+</head>
+
+<body>
+
+  <!-- The table's border width can be increase using the value below -->
+  <!-- We'll learn how to do this in a cleaner approach with CSS -->
+  <table border="1">
+
+    <!-- thead/tbody/tfoot are not technically necessary to render the table, but they have their own benefits -->
+    <!-- This enables our webpage to recognize these are individual components, so when they span across  -->
+    <!-- multiple pages, it knows to handle each one differently -->
+    <!-- Also, if we placed a table in a section of our webpage that didn't have enough vertical spacing, -->
+    <!-- the webpage would know to make the body scrollable, and freeze the header/footer -->
+    <!-- Lastly, these tags add a semantic meaning to sections of our table, which make it much more clear -->
+    <thead>
+      <tr>
+
+        <!-- Spans the defined text value across a specified number of columns -->
+        <!-- If we're taking a full row, then it needs to be in its own <tr> tags -->
+        <th colspan="4">Regional Sales Q1</th>
+      </tr>
+      <tr>
+
+        <!-- Table headers automatically show bold -->
+        <th>Region</th>
+        <th>Sales Person</th>
+        <th>Amount</th>
+        <th>Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>North-West</td>
+        <td>Tim</td>
+        <td>$3,000</td>
+        <td>$24,700</td>
+      </tr>
+      <tr>
+        <td>South-East</td>
+        <td>Ashley</td>
+        <td>$1,500</td>
+      </tr>
+      <tr>
+        <td>South-West</td>
+        <td>Jeff</td>
+        <td>$1,000</td>
+      </tr>
+      <tr>
+        <td>North-West</td>
+        <td>Sarah</td>
+        <td>$4,000</td>
+      </tr>
+      <tr>
+        <td>North-East</td>
+        <td>Alex</td>
+        <td>$2,000</td>
+      </tr>
+      <tr>
+        <td>North-East</td>
+        <td>Kevin</td>
+        <td>$5,000</td>
+      </tr>
+      <tr>
+        <td>South-East</td>
+        <td>Patricia</td>
+        <td>$6,300</td>
+      </tr>
+      <tr>
+        <td>South-West</td>
+        <td>Arnold</td>
+        <td>$200</td>
+      </tr>
+      <tr>
+        <td>North-West</td>
+        <td>Lindsay</td>
+        <td>$800</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="4">Q1 Employee Sales By Region</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+
+</html>
